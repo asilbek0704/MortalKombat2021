@@ -1,0 +1,121 @@
+@media (max-width: 992px) {
+    .nav {
+        margin: 0 147px 30px;
+    }
+    .banner {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        margin: 0 auto 20px;
+        width: 90%;
+    }
+    .about {
+        width: 432px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro {
+        text-align: center;
+    }
+    .about-buttons {
+        width: 100%;
+    }
+    .banner {
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    .user-name {
+        display: none;
+    }
+    .nav {
+        width: 85%;
+    }
+
+    .about {
+        width: 333px;
+        margin-bottom: 70px;
+    }
+
+    .about .filmLogo {
+        width: 280px;
+        height: 62px;
+    }
+
+    .params {
+        width: 100%;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .about-buttons {
+        margin-top: 19px;
+    }
+    .about-buttons button {
+        font-size: 16px;
+        padding: 11px 25px;
+    }
+
+    .about-buttons .trailer {
+        padding: 15px 25px;
+    }
+
+    .trailer span {
+        display: none;
+    }
+
+    .trailer img {
+        margin-right: 0;     
+    }
+
+    .about-buttons {
+        justify-content: space-evenly;
+    }
+
+    .banner {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+
+    .video {
+        position: absolute;
+        /* left: 50%;
+        top: 50%; */
+        top: 0;
+        left: 0;
+        transform: translateZ(0.4px) translate(-50%);
+        width: 100%;
+        height: 230px;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background: #000000d2;
+        transform: translateZ(1px);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .overlay .exit {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: block;
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+
+    }
+}

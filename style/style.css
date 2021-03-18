@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #010202;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: column; */
+}
+
+/* nav start */
+
+.nav {
+    width: auto;
+    margin: 0 147px 6.3%;
+    /* margin: 0 147px; */
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateZ(1px);
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a img {
+    display: block;
+}
+
+.user-name {
+    margin-right: 10px;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+
+/* nav end */
+
+/* banner start */
+
+.about {
+    width: 460px;
+    margin-left: 147px;
+    transform: translateZ(1px);
+    /* margin-bottom: 11%; */
+}
+
+.about .filmLogo {
+    width: 405px;
+    height: 90px;
+    margin-bottom: 18px;
+}
+
+.params {
+    width: 350px;
+    font-size: 16px;
+    color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.params span {
+    opacity: 0.4;
+}
+
+.ageLimit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 1px 4px;
+}
+
+.intro {
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.about-buttons {
+    width: 405px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.about-buttons button {
+    outline: none;
+    border: none;
+    padding: 13px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.about-buttons button:hover {
+    opacity: 0.8;
+}
+
+.order {
+    background: #EA6E20;
+}
+
+.trailer {
+    background: #2F2F2F;
+}
+
+.trailer:disabled {
+    opacity: 0.6;    
+}
+
+.trailer:disabled:hover {
+    opacity: 0.6;
+}
+
+.trailer img {
+    width: 12px;
+    height: 13.5px;
+    margin-right: 10px;
+}
+
+.trailer span {
+    font-size: 16px;
+}
+
+/* banner end */
+
+.banner {
+    width: 58%;
+    height: 100%;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateZ(0.5px);
+}
+
+
+.video {
+    width: 100%;
+    height: 135vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* display: none; */
+
+    transform: translateZ(0.4px) translate(-50%, -50%);
+}
+
+
+.video-trailer {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay {
+    display: none;
+    width: 0;
+    height: 0;
+}
