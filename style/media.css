@@ -28,6 +28,22 @@
     .banner {
         width: 100%;
     }
+    .book input:not(:last-of-type) {
+        width: 65%;
+        height: 10%;
+        font-size: 16px;
+    }
+    .book p {
+        font-size: 23px;
+    }
+    .book input[type='submit'] {
+        margin-top: 5px;
+        padding: 10px 12px;
+        font-size: 17px;
+    }
+    .book {
+        height: 55%;
+    }
 }
 
 @media (max-width: 440px) {
@@ -37,25 +53,20 @@
     .nav {
         width: 85%;
     }
-
     .about {
         width: 333px;
         margin-bottom: 70px;
     }
-
     .about .filmLogo {
         width: 280px;
         height: 62px;
     }
-
     .params {
         width: 100%;
     }
-
     .intro {
         font-size: 16px;
     }
-
     .about-buttons {
         margin-top: 19px;
     }
@@ -63,29 +74,23 @@
         font-size: 16px;
         padding: 11px 25px;
     }
-
     .about-buttons .trailer {
         padding: 15px 25px;
     }
-
     .trailer span {
         display: none;
     }
-
     .trailer img {
-        margin-right: 0;     
+        margin-right: 0;
     }
-
     .about-buttons {
         justify-content: space-evenly;
     }
-
     .banner {
         width: 100%;
         height: 400px;
         position: relative;
     }
-
     .video {
         position: absolute;
         /* left: 50%;
@@ -96,7 +101,6 @@
         width: 100%;
         height: 230px;
     }
-
     .overlay {
         width: 100%;
         height: 100%;
@@ -106,7 +110,6 @@
         top: 0;
         left: 0;
     }
-
     .overlay .exit {
         position: absolute;
         right: 15px;
@@ -116,6 +119,24 @@
         background: transparent;
         border: none;
         outline: none;
+    }
 
+    .book{
+        width: 80%;
+        height: 30%;
+    }
+
+    .book input:not(:last-of-type) {
+        margin-bottom: 15px;
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .book p {
+        font-size: 19px;
+    }
+
+    .book input[type='submit'] {
+        font-size: 14px;
     }
 }

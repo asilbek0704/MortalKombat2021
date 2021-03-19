@@ -2,7 +2,7 @@
 
 
 
-if ($(document).innerWidth() <= 440) {
+if ($(document).innerWidth() <= 450) {
 
     $('.overlay .exit').after($('.video'));
 
@@ -24,7 +24,7 @@ if ($(document).innerWidth() <= 440) {
 
 
     $('.overlay').on('click', (e) => {
-        if (e.target == $('img.exit')[0] || e.target == $('.overlay')[0]) {
+        if (e.target == $('.overlay img.exit')[0] || e.target == $('.overlay')[0]) {
             $('.overlay').css('display', 'none');
             $('.video-trailer').trigger('pause');
             $('.video-trailer')[0].currentTime = 0;
@@ -48,6 +48,36 @@ if ($(document).innerWidth() <= 440) {
 
     })
 
+
+
+    $('.order').on('click', () => {
+        $('.book-overlay').css({
+            visibility: 'visible',
+            opacity: 1
+        })
+
+        $('.book-overlay').on('click', (e) => {
+            if (e.target == $('.book img.exit')[0] || e.target == $('.book-overlay')[0]) {
+                $('.book-overlay').css({
+                    visibility: 'hidden',
+                    opacity: 0
+                });
+            }
+        })
+
+        $('.book').css({
+            position: 'absolute',
+            top: `${($(window).innerHeight() - $('.book').height()) / 2 + $(window).scrollTop()}px`,
+        })
+    })
+
+
+    $(document).on('scroll', () => {
+        $('.book').css({
+            position: 'absolute',
+            top: `${($(window).innerHeight() - $('.book').height()) / 2 + $(window).scrollTop()}px`,
+        })
+    })
 
 
 
@@ -118,6 +148,27 @@ if ($(document).innerWidth() <= 440) {
     //     transform: 'translateZ(0.5px)'
     // });
     // }, ($('.video-trailer')[0].duration - $('.video-trailer')[0].currentTime) * 1000)
+
+
+
+
+    $('.order').on('click', () => {
+        $('.book-overlay').css({
+            visibility: 'visible',
+            opacity: 1
+        })
+
+        $('.book-overlay').on('click', (e) => {
+            if (e.target == $('.book img.exit')[0] || e.target == $('.book-overlay')[0]) {
+                $('.book-overlay').css({
+                    visibility: 'hidden',
+                    opacity: 0
+                });
+            }
+        })
+    })
+
+
 
 
 

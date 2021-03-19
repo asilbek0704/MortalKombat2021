@@ -138,7 +138,7 @@
 }
 
 .trailer:disabled {
-    opacity: 0.6;    
+    opacity: 0.6;
 }
 
 .trailer:disabled:hover {
@@ -167,7 +167,6 @@
     transform: translateZ(0.5px);
 }
 
-
 .video {
     width: 100%;
     height: 135vh;
@@ -175,10 +174,8 @@
     top: 50%;
     left: 50%;
     /* display: none; */
-
     transform: translateZ(0.4px) translate(-50%, -50%);
 }
-
 
 .video-trailer {
     object-fit: cover;
@@ -186,9 +183,88 @@
     height: 100%;
 }
 
-
 .overlay {
     display: none;
     width: 0;
     height: 0;
+}
+
+.book-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(1px);
+    background: transparent;
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.book {
+    position: relative;
+    height: 65%;
+    width: 50%;
+    background: url('../img/modal-bg.jpg') no-repeat center / cover;
+    /* border-radius: 100%; */
+}
+
+.book form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book .exit {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.book input:not(:last-of-type) {
+    width: 50%;
+    height: 12%;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+.book input {
+    transition: 0.3s;
+}
+
+.book input:not(:last-of-type):focus {
+    border: 3px solid #EA6E20;
+    outline: none;
+}
+
+.book p {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.book input[type='submit'] {
+    margin-top: 15px;
+    padding: 13px 17px;
+    background: #2F2F2F;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+
+.book input[type='submit']:hover {
+    background: #ff0000;
 }
